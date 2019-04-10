@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client_code/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client_ui/test.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client_ui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,16 +15,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="399">
+              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -68,8 +61,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/client_code/Manager.java" />
-        <option value="$PROJECT_DIR$/src/client_ui/test.java" />
         <option value="$PROJECT_DIR$/src/client_ui/test.form" />
+        <option value="$PROJECT_DIR$/src/client_ui/test.java" />
       </list>
     </option>
   </component>
@@ -112,6 +105,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -167,12 +161,12 @@
       <updated>1554758417246</updated>
       <workItem from="1554758421496" duration="998000" />
       <workItem from="1554912385942" duration="1207000" />
-      <workItem from="1554915508495" duration="2336000" />
+      <workItem from="1554915508495" duration="3382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4541000" />
+    <option name="totallyTimeSpent" value="5587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -187,7 +181,7 @@
       <window_info id="Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37645108" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25870648" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,15 +208,15 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/ca4006-assignment2-client.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/deployment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/ca4006-assignment2-client.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -231,15 +225,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
       <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

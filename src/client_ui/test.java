@@ -18,6 +18,20 @@ public class test {
     private JPanel paramPanel;
 
     public test() {
+
+        ActionListener listener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        };
+        ENTERButton.addActionListener(listener);
+        TIMETABLEButton.addActionListener(listener);
+        ROOMAVAILABILITYButton.addActionListener(listener);
+        NEWROOMButton.addActionListener(listener);
+        VIEWROOMSButton.addActionListener(listener);
+        NEWBOOKINGButton.addActionListener(listener);
+        ENTERButton.addActionListener(listener);
     }
 
     public static void main(String [] args){
