@@ -26,8 +26,7 @@ public class HttpRest{
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
 
-            String[] parts = br.readLine().split("(?<=\\}),");
-            System.out.println("Output from Server .... \n");
+            String[] parts = br.readLine().split("(?<=\\}),");  
             request = clean_rest(parts, request);
             conn.disconnect();
             return request;
@@ -54,7 +53,6 @@ public class HttpRest{
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
-            System.out.println("This is a post");
             String[] parts = br.readLine().split("(?<=\\}),");
             request = clean_rest(parts, request);
 

@@ -1,2 +1,4 @@
 #ignore everything in the .idea directory
 .idea/*
+#ignore all class files
+*.class
