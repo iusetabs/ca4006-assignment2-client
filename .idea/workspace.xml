@@ -2,68 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ca4006-assignment2-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/vcsMetadata-1/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/HttpRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MessengerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HttpRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessengerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_code/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_ui/test.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_ui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,12 +21,26 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="209">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -107,21 +67,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/client_code/Manager.java" />
         <option value="$PROJECT_DIR$/src/client_ui/test.java" />
+        <option value="$PROJECT_DIR$/src/client_ui/test.form" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="x" value="-63" />
+    <option name="y" value="-35" />
+    <option name="width" value="1946" />
+    <option name="height" value="1106" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,42 +96,23 @@
             <path>
               <item name="ca4006-assignment2-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="ca4006-assignment2-client" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ca4006-assignment2-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ca4006-assignment2-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ca4006-assignment2-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ca4006-assignment2-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client_code" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ca4006-assignment2-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="ca4006-assignment2-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client_ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ca4006-assignment2-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ca4006-assignment2-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client_ui" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -220,47 +165,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554758417246</updated>
-      <workItem from="1554758421496" duration="399000" />
+      <workItem from="1554758421496" duration="998000" />
+      <workItem from="1554912385942" duration="1207000" />
+      <workItem from="1554915508495" duration="2336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399000" />
+    <option name="totallyTimeSpent" value="4541000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.024291499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32950193" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32950193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37645108" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32950193" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Remote Host" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,12 +224,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
