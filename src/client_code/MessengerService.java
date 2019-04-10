@@ -23,14 +23,29 @@ public class MessengerService implements Runnable {
 
     public boolean make_booking(String room, int day, String time, int att){
         String booking_tmp = ("{\"room_name\": \""+ room +"\", \"day\": "+ day +", \"time\":\""+ time +"\", \"num_attendees\": "+ att +"}");
-        return (post_request("/bookings", booking_tmp).get(0) != "Error, booking already exists");
+        String error = "Error, booking already exists";
+        return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
+    }
+
+    public void get_rooms(){
+        System.out.println(this.name + " :" + get_request("/rooms"));
+    }
+
+    public void get_checkRoom(String name, int day, String time){
+        String checkRoom_tmp = "/checkRoom/rooms/"+ name +"/day/"+ day +"/time/"+ time;
+        System.out.println(this.name + " :" + get_request(checkRoom_tmp));
+    }
+
+    public void get_timetable(String room, int s_day, int e_day){
+       String timetable_tmp = "/timetableWeek/rooms/"+ room +"/startDay/"+ s_day +"/endDay/"+ e_day;
+       System.out.println(this.name + " :" + get_request(timetable_tmp));
     }
 
     public void build_request(){
-
-        ArrayList received = get_request("/rooms");
-        System.out.println(this.name + ": " + received);
-        System.out.println(make_booking("CG04", 2, "13:00", 80));
+        get_rooms();
+        get_checkRoom("CG04", 2, "16:00");
+        get_timetable("CG04", 2, 7);
+        System.out.println(this.name + " :" + make_booking("CG04", 2, "16:00", 80));
     }
 
     @Override
