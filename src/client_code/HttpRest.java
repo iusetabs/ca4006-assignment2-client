@@ -38,7 +38,7 @@ public class HttpRest{
     return request;
     }
 
-    public static ArrayList<String> executePost(String IP, String Payload){
+    public static ArrayList executePost(String IP, String Payload){
         ArrayList<String> request = new ArrayList<String>();
         try {
             URL url = new URL(IP);
@@ -52,17 +52,12 @@ public class HttpRest{
             os.write(Payload.getBytes());
             os.flush();
 
-            if (conn.getResponseCode() != HttpURLConnection.HTTP_CREATED) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
-            }
-
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
-
+            System.out.println("This is a post");
             String[] parts = br.readLine().split("(?<=\\}),");
-            System.out.println("Output from Server .... \n");
             request = clean_rest(parts, request);
+
             conn.disconnect();
             return request;
 
