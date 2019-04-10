@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 
 public class HttpRest{
-    public static ArrayList executeGet(String IP){
+    public static ArrayList<String> executeGet(String IP){
         ArrayList<String> request = new ArrayList<String>();
         try {
             URL url = new URL(IP);
@@ -67,7 +67,7 @@ public class HttpRest{
         return request;
     }
 
-    public static ArrayList clean_rest(String[] parts, ArrayList request){
+    public static ArrayList<String> clean_rest(String[] parts, ArrayList request){
         for (String i : parts) {
             if (i.contains("[") )
             {
