@@ -5,23 +5,30 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class test {
-    private JPanel myPanel;
-    private JButton myButton;
+    private JPanel mainPanel;
+    private JButton TESTButton;
+    private JButton ROOMAVAILABILITYButton;
+    private JButton NEWROOMButton;
+    private JButton VIEWROOMSButton;
+    private JButton TIMETABLEButton;
+    private JButton NEWBOOKINGButton;
+    private JButton ENTERButton;
+    private JPanel butttonPanel;
+    private JPanel outputPanel;
+    private JPanel paramPanel;
+
     public test() {
-        myButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Hello World!");
-            }
-        });
     }
 
     public static void main(String [] args){
         JFrame frame = new JFrame("app");
-        frame.setContentPane(new test().myPanel);
+        frame.setContentPane(new test().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
 
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }
