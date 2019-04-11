@@ -42,7 +42,7 @@ public class MessengerService implements Runnable {
     }
 
     public void build_request(){
-        get_rooms();
+        get_r           ooms();
         get_checkRoom("CG04", 2, "16:00");
         get_timetable("CG04", 2, 7);
         System.out.println(this.name + " :" + make_booking("CG04", 2, "16:00", 80));
