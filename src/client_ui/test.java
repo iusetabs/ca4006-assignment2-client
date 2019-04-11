@@ -38,6 +38,11 @@ public class test {
     private Calendar cal;
     private SimpleDateFormat sdf;
     private boolean timetable = false;
+    private boolean new_room = false;
+    private boolean new_booking = false;
+    private boolean availability = false;
+    private boolean testing = false;
+    private Map<String, Integer> o_Sizes = new HashMap<>();
 
     public test() {
         cal = Calendar.getInstance();
@@ -46,6 +51,7 @@ public class test {
         ms  = new MessengerService(1, "http://10.216.35.189:8080");
 
         ActionListener listener = e -> {
+            reset_param_layout();
             if (e.getSource().equals(TIMETABLEButton)){
                 t_dF1.setText("Room name");
                 t_dF2.setText("Start day");
@@ -57,9 +63,23 @@ public class test {
                 outputArea.append(t() + "....Please enter room, start day and end day.\n");
             }
             else if (e.getSource().equals(ROOMAVAILABILITYButton)) {
+                t_dF1.setText("Room name");
+                t_dF2.setText("Day");
+                t_dF3.setText("Time");
+                dF4.setVisible(false);
+                t_dF4.setVisible(false);
+                availability = true;
                 afterBtn();            }
             else if (e.getSource().equals(NEWROOMButton)){
-                afterBtn();            }
+                t_dF1.setText("New room name");
+                t_dF2.setText("Capacity");
+                dF3.setVisible(false);
+                t_dF3.setVisible(false);
+                dF4.setVisible(false);
+                t_dF4.setVisible(false);
+                afterBtn();
+                new_room = true;
+            }
             else if (e.getSource().equals(VIEWROOMSButton)) {
                 outputArea.append(t() + "Getting listing of current rooms\n");
                 paramPanel.setVisible(false);
@@ -76,7 +96,13 @@ public class test {
                 }
             }
             else if (e.getSource().equals(NEWBOOKINGButton)){
-                afterBtn();            }
+                t_dF1.setText("Room name");
+                t_dF2.setText("Day");
+                t_dF3.setText("Time");
+                t_dF4.setText("Number of attendees");
+                afterBtn();
+                new_booking = true;
+            }
             else if (e.getSource().equals(ENTERButton)){
                 if(timetable){
                         String rN = dF1.getText().strip();
@@ -84,26 +110,102 @@ public class test {
                         int eD = Integer.parseInt(dF3.getText().strip());
                         ArrayList<String> a = ms.get_timetable(rN, sD, eD);
                     if (a.isEmpty()){
-                        outputArea.append("No timetable found!");
+                        outputArea.append(t() + "No timetable found!");
                     }
                     else{
+                        outputArea.append(t() + "Timetable for room " + rN + "\n");
+                        Map<Integer, List<Map<String, Object>>> bookings_ByDay = new HashMap<>();
                         for (String s : a) {
-                            System.out.println(s);
                             Map<String, Object> m = ms.jsonToMap(s);
-                            ArrayList<String> arranged_keySet = arrangeKeySet(m);
-                            //outputArea.append(t() + "Room " + m.get("name") + " has a capacity of " + m.get("capacity")  + ".\n");
+                            Integer d = (Integer) m.get("day");
+                            if (bookings_ByDay.get(d) == null) {
+                                List<Map<String, Object>> l = new ArrayList<>();
+                                bookings_ByDay.put(d, l);
+                            }
+                            List<Map<String, Object>> l = bookings_ByDay.get(d);
+                            l.add(m);
+                            bookings_ByDay.put((int) m.get("day"), l);
+                        }
+                        List<Integer> keys = new ArrayList<>(bookings_ByDay.keySet());
+                        Collections.sort(keys);
+                        System.out.println(keys);
+                        for (Integer s : keys){
+                            for (Map<String, Object> m :  bookings_ByDay.get(s))
+                             outputArea.append(t() + "Day: " + m.get("day") + ". Booked at " + m.get("time") + " hours.\n");
                         }
                         outputArea.append("\n");
                     }
                     timetable = false;
-                    dF4.setVisible(true);
-                    t_dF4.setVisible(true);
                     clearText();
+                }
+                else if (new_room){
+                    String rN = dF1.getText().strip();
+                    int c = Integer.parseInt(dF2.getText().strip());
+                    clearText();
+                    Boolean res = ms.new_room(rN, c);
+                    if (res)
+                        outputArea.append(t() + "Successfully created room " + rN + " with capacity " + c + ".\n");
+                    else
+                        outputArea.append(t() + "Failed to create room " + rN + " with capacity " + c + ".\n");
+                    outputArea.append("\n");
+                    new_room = false;
+                }
+                else if(new_booking) {
+                    String rN = dF1.getText().strip();
+                    int d = Integer.parseInt(dF2.getText().strip());
+                    String t = dF3.getText().strip();
+                    int a = Integer.parseInt(dF4.getText().strip());
+                    clearText();
+                    Boolean res = ms.make_booking(rN, d, t, a);
+                    if (res)
+                        outputArea.append(t() + "Successful booking. \n");
+                    else
+                        outputArea.append(t() + "Failed to book room " + rN + " at " + t + " on day " + d + ".\n");
+                    outputArea.append("\n");
+                    new_booking = false;
+                }
+                else if (availability){
+                    String rN = dF1.getText().strip();
+                    int d = Integer.parseInt(dF2.getText().strip());
+                    String t = dF3.getText().strip();
+                    clearText();
+                    ArrayList<String> a = ms.get_timetable(rN, d, d);
+                    boolean res = true;
+                    if(!a.isEmpty()) {
+                        for (String s : a) {
+                            Map<String, Object> m = ms.jsonToMap(s);
+                            if (m.get("time").equals(t)) {
+                                res = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (res)
+                        outputArea.append(t() + rN + " is available at " +  t  + " hours.\n");
+                    else
+                        outputArea.append(t() + rN + " is not available at " +  t  + " hours.\n");
+                    outputArea.append("\n");
+                    availability = false;
+                }
+                else if(testing){
+                    outputArea.append("\n");
+                    testing = false;
                 }
             }
             else if (e.getSource().equals(TESTButton)) {
+                t_dF1.setText("How many threads?");
+                dF2.setVisible(false);
+                t_dF2.setVisible(false);
+                dF3.setVisible(false);
+                t_dF3.setVisible(false);
+                dF4.setVisible(false);
+                t_dF4.setVisible(false);
+                testing = true;
                 afterBtn();
             }
+            paramPanel.revalidate();
+            paramPanel.repaint();
+
         };
         TIMETABLEButton.addActionListener(listener);
         ROOMAVAILABILITYButton.addActionListener(listener);
@@ -112,6 +214,17 @@ public class test {
         NEWBOOKINGButton.addActionListener(listener);
         ENTERButton.addActionListener(listener);
         TESTButton.addActionListener(listener);
+    }
+
+    private void reset_param_layout() {
+        dF1.setVisible(true);
+        t_dF1.setVisible(true);
+        dF2.setVisible(true);
+        t_dF2.setVisible(true);
+        dF3.setVisible(true);
+        t_dF3.setVisible(true);
+        dF4.setVisible(true);
+        t_dF4.setVisible(true);
     }
 
     public static void main(String [] args){
@@ -141,13 +254,4 @@ public class test {
         return sdf.format(cal.getTime()) +":\t";
     }
 
-    private ArrayList<String> arrangeKeySet( Map<String, Object> m){
-        ArrayList<String> a = new ArrayList<>();
-
-        for (String k : m.keySet()){
-            a.add(m.get(k).toString());
-        }
-        Collections.sort(a);
-        return a;
-    }
 }
