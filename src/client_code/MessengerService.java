@@ -7,7 +7,7 @@ public class MessengerService implements Runnable {
     private int name;
     private String IP;
 
-    MessengerService(int name, String IP){
+    public MessengerService(int name, String IP){
         this.name = name;
         this.IP = IP;
     }
