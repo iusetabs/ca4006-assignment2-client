@@ -11,10 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class test {
     private JPanel mainPanel;
@@ -28,14 +25,19 @@ public class test {
     private JPanel butttonPanel;
     private JPanel outputPanel;
     private JPanel paramPanel;
-    private JTextField textField1;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField2;
+    private JTextField dF1;
+    private JTextField dF2;
+    private JTextField dF3;
+    private JTextField dF4;
     private JTextArea outputArea;
+    private JLabel t_dF1;
+    private JLabel t_dF2;
+    private JLabel t_dF3;
+    private JLabel t_dF4;
     public MessengerService ms;
     private Calendar cal;
     private SimpleDateFormat sdf;
+    private boolean timetable = false;
 
     public test() {
         cal = Calendar.getInstance();
@@ -44,28 +46,30 @@ public class test {
         ms  = new MessengerService(1, "http://10.216.35.189:8080");
 
         ActionListener listener = e -> {
-            if (e.getSource().equals(ENTERButton)){
-                paramPanel.setVisible(false);
-            }
-            else if (e.getSource().equals(TIMETABLEButton)){
+            if (e.getSource().equals(TIMETABLEButton)){
+                t_dF1.setText("Room name");
+                t_dF2.setText("Start day");
+                t_dF3.setText("End day");
+                dF4.setVisible(false);
+                t_dF4.setVisible(false);
                 afterBtn();
+                timetable = true;
+                outputArea.append(t() + "....Please enter room, start day and end day.\n");
             }
             else if (e.getSource().equals(ROOMAVAILABILITYButton)) {
                 afterBtn();            }
             else if (e.getSource().equals(NEWROOMButton)){
-                afterBtn();            }
-            else if (e.getSource().equals(ENTERButton)){
                 afterBtn();            }
             else if (e.getSource().equals(VIEWROOMSButton)) {
                 outputArea.append(t() + "Getting listing of current rooms\n");
                 paramPanel.setVisible(false);
                 ArrayList<String> a = ms.get_request("/rooms");
                 if (a.isEmpty()){
-                    outputArea.append("No rooms found!");
+                    outputArea.append(t() + "No rooms found!\n");
                 }
                 else{
                     for (String s : a) {
-                        Map<String, Object> m = jsonToMap(s);
+                        Map<String, Object> m = ms.jsonToMap(s);
                         outputArea.append(t() + "Room " + m.get("name") + " has a capacity of " + m.get("capacity")  + ".\n");
                     }
                     outputArea.append("\n");
@@ -73,14 +77,34 @@ public class test {
             }
             else if (e.getSource().equals(NEWBOOKINGButton)){
                 afterBtn();            }
-            else if (e.getSource().equals(ENTERButton)) {
-                afterBtn();
+            else if (e.getSource().equals(ENTERButton)){
+                if(timetable){
+                        String rN = dF1.getText().strip();
+                        int sD = Integer.parseInt(dF2.getText().strip());
+                        int eD = Integer.parseInt(dF3.getText().strip());
+                        ArrayList<String> a = ms.get_timetable(rN, sD, eD);
+                    if (a.isEmpty()){
+                        outputArea.append("No timetable found!");
+                    }
+                    else{
+                        for (String s : a) {
+                            System.out.println(s);
+                            Map<String, Object> m = ms.jsonToMap(s);
+                            ArrayList<String> arranged_keySet = arrangeKeySet(m);
+                            //outputArea.append(t() + "Room " + m.get("name") + " has a capacity of " + m.get("capacity")  + ".\n");
+                        }
+                        outputArea.append("\n");
+                    }
+                    timetable = false;
+                    dF4.setVisible(true);
+                    t_dF4.setVisible(true);
+                    clearText();
+                }
             }
             else if (e.getSource().equals(TESTButton)) {
                 afterBtn();
             }
         };
-        ENTERButton.addActionListener(listener);
         TIMETABLEButton.addActionListener(listener);
         ROOMAVAILABILITYButton.addActionListener(listener);
         NEWROOMButton.addActionListener(listener);
@@ -104,24 +128,26 @@ public class test {
 
     private void afterBtn(){
         paramPanel.setVisible(true);
-        clearText();
     }
     private void clearText(){
-
-    }
-
-    private Map<String, Object> jsonToMap(String s) {
-        Map<String, Object> m;
-        try {
-            m = new ObjectMapper().readValue(s, HashMap.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-            m = new HashMap<>();
-        }
-        return m;
+        dF1.setText("");
+        dF2.setText("");
+        dF3.setText("");
+        dF4.setText("");
+        paramPanel.setVisible(false);
     }
 
     private String t(){
         return sdf.format(cal.getTime()) +":\t";
+    }
+
+    private ArrayList<String> arrangeKeySet( Map<String, Object> m){
+        ArrayList<String> a = new ArrayList<>();
+
+        for (String k : m.keySet()){
+            a.add(m.get(k).toString());
+        }
+        Collections.sort(a);
+        return a;
     }
 }
