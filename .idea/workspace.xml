@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client_code/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/MessengerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client_ui/test.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client_ui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +27,16 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ca4006-assignment2-client" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="172" column="35" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
+            <state relative-caret-position="-2277">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9597#9598#0" expanded="true" />
@@ -61,13 +60,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -75,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="215">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,6 +90,7 @@
       <find>clean_rest</find>
       <find>clearText</find>
       <find>no Rooms</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,10 +108,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="135" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="x" value="1601" />
+    <option name="y" value="-180" />
+    <option name="width" value="1653" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -184,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UI">
+  <component name="RunManager" selected="Application.Manager">
     <configuration name="Manager" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="client_code.Manager" />
       <module name="ca4006-assignment2-client" />
@@ -217,12 +217,12 @@
       <workItem from="1554758421496" duration="998000" />
       <workItem from="1554912385942" duration="1207000" />
       <workItem from="1554915508495" duration="2336000" />
-      <workItem from="1554987716108" duration="10165000" />
+      <workItem from="1554987716108" duration="13156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24670000" />
+    <option name="totallyTimeSpent" value="27661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,19 +234,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="1593" y="-179" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20244215" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Designer" order="6" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Structure" order="4" sideWeight="0.50082916" side_tool="true" weight="0.32955465" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.4991708" weight="0.32955465" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46434495" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46434495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,25 +296,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="215">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -325,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="172" column="35" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
+        <state relative-caret-position="-2277">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9597#9598#0" expanded="true" />
@@ -336,6 +333,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
