@@ -1,11 +1,16 @@
 package client_code;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
+
 
 public class MessengerService implements Runnable {
 
@@ -45,11 +50,37 @@ public class MessengerService implements Runnable {
     }
 
     public void build_request(){
-        System.out.println(get_rooms());
-        System.out.println(get_checkRoom("CG04", 2, "16:00"));
-        System.out.println(get_timetable("CG04", 2, 7));
-        System.out.println(this.name + " :" + make_booking("CG04", 2, "16:00", 80));
+        //System.out.println(get_rooms());
+        //System.out.println(get_checkRoom("CG04", 2, "16:00"));
+        //System.out.println(get_timetable("CG04", 2, 7));
+        ArrayList lst = new ArrayList();
+        try {
+            lst = read_json_get_rooms(get_rooms());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        Random ran = new Random();
+        for (int i = 0; i<3; i++) {
+            try {
+                Thread.currentThread().sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(this.name + " :" + make_booking((String) lst.get(ran.nextInt(lst.size())), ran.nextInt(6), ran.nextInt(24)+":00", ran.nextInt(80)));
+        }
     }
+
+
+    public ArrayList read_json_get_rooms(ArrayList lst) throws ParseException {
+        ArrayList tmp = new ArrayList();
+        for (Object str : lst) {
+            Object obj = new JSONParser().parse((String) str);
+            JSONObject jo = new JSONObject((Map) obj);
+            tmp.add(jo.get("name"));
+        }
+        return tmp;
+    }
+
 
     public Map<String, Object> jsonToMap(String s) {
         Map<String, Object> m;
