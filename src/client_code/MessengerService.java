@@ -40,7 +40,11 @@ public class MessengerService implements Runnable {
         return get_request("/checkRoom/rooms/"+ name +"/day/"+ day +"/time/"+ time);
     }
 
-    public ArrayList new_room(){}
+    public boolean new_room(String room, int capacity){
+        String booking_tmp = ("{\"name\": \""+ room +"\", \"capacity\": "+ capacity +"}");
+        String error = "Error, cannot post to room"; //TODO CHECK ERROR MESSAGE ON FAIL TO POST
+        return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
+    }
 
     public ArrayList get_timetable(String room, int s_day, int e_day){
        return get_request("/timetableWeek/rooms/"+ room +"/startDay/"+ s_day +"/endDay/"+ e_day);

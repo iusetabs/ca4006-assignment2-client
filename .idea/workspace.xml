@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="" />
+    <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/client_code/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/MessengerService.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +35,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2277">
+            <state relative-caret-position="850">
               <caret line="50" column="10" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9597#9598#0" expanded="true" />
-                <element signature="e#9640#9641#0" expanded="true" />
-                <element signature="e#9839#9840#0" expanded="true" />
-                <element signature="e#9894#9895#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1037">
               <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
             </state>
           </provider>
@@ -59,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+            <state relative-caret-position="317">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,17 +97,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/client_code/HttpRest.java" />
         <option value="$PROJECT_DIR$/src/client_code/Manager.java" />
-        <option value="$PROJECT_DIR$/src/client_code/MessengerService.java" />
         <option value="$PROJECT_DIR$/src/client_ui/test.form" />
         <option value="$PROJECT_DIR$/src/client_ui/test.java" />
+        <option value="$PROJECT_DIR$/src/client_code/MessengerService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1601" />
-    <option name="y" value="-180" />
+    <option name="x" value="1600" />
+    <option name="y" value="-181" />
     <option name="width" value="1653" />
-    <option name="height" value="1100" />
+    <option name="height" value="1101" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -216,11 +214,12 @@
       <workItem from="1554912385942" duration="1207000" />
       <workItem from="1554915508495" duration="2336000" />
       <workItem from="1554987716108" duration="13737000" />
+      <workItem from="1555018283262" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28242000" />
+    <option name="totallyTimeSpent" value="28258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,31 +293,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="850">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1037">
           <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2277">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9640#9641#0" expanded="true" />
-            <element signature="e#9839#9840#0" expanded="true" />
-            <element signature="e#9894#9895#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -327,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+        <state relative-caret-position="317">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
