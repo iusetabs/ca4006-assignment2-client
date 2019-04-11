@@ -40,6 +40,8 @@ public class MessengerService implements Runnable {
         return get_request("/checkRoom/rooms/"+ name +"/day/"+ day +"/time/"+ time);
     }
 
+    public ArrayList new_room(){}
+
     public ArrayList get_timetable(String room, int s_day, int e_day){
        return get_request("/timetableWeek/rooms/"+ room +"/startDay/"+ s_day +"/endDay/"+ e_day);
     }
