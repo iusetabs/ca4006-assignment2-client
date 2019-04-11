@@ -50,6 +50,9 @@ public class MessengerService implements Runnable {
        return get_request("/timetableWeek/rooms/"+ room +"/startDay/"+ s_day +"/endDay/"+ e_day);
     }
 
+
+
+
     public void build_request(){
         System.out.println(get_rooms());
         System.out.println(get_checkRoom("CG04", 2, "16:00"));

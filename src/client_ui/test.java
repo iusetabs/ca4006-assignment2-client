@@ -12,6 +12,9 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class test {
     private JPanel mainPanel;
@@ -138,6 +141,10 @@ public class test {
                     timetable = false;
                     clearText();
                 }
+                else if (testing){
+                    int num = Integer.parseInt(dF1.getText().strip());
+                    run_program(num);
+                }
                 else if (new_room){
                     String rN = dF1.getText().strip();
                     int c = Integer.parseInt(dF2.getText().strip());
@@ -214,6 +221,17 @@ public class test {
         NEWBOOKINGButton.addActionListener(listener);
         ENTERButton.addActionListener(listener);
         TESTButton.addActionListener(listener);
+    }
+
+    public void run_program(int rN){
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
+        Random ran = new Random();
+        String ip = "http://10.216.35.189:8080";
+        for (int i=0; i < 50; i++ ){
+            MessengerService m = new MessengerService(i, ip);
+            executor.schedule(m, Math.abs(ran.nextInt(5)+1) , TimeUnit.SECONDS);
+        }
+        executor.shutdown();
     }
 
     private void reset_param_layout() {
