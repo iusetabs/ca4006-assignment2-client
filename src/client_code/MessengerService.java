@@ -32,6 +32,12 @@ public class MessengerService implements Runnable {
         return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
     }
 
+    public boolean new_room(String room, int capacity){
+        String booking_tmp = ("{\"name\": \""+ room +"\", \"capacity\": "+ capacity +"}");
+        String error = "Error, cannot post to room"; //TODO CHECK ERROR MESSAGE ON FAIL TO POST
+        return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
+    }
+
     public ArrayList get_rooms(){
         return get_request("/rooms");
     }
