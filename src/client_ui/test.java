@@ -37,22 +37,22 @@ public class test {
     public MessengerService ms;
     private Calendar cal;
     private SimpleDateFormat sdf;
-    private boolean timetable = false;
-    private boolean new_room = false;
-    private boolean new_booking = false;
-    private boolean availability = false;
-    private boolean testing = false;
+    private boolean timetable;
+    private boolean new_room;
+    private boolean new_booking;
+    private boolean availability;
+    private boolean testing;
     private Map<String, Integer> o_Sizes = new HashMap<>();
 
     public test() {
-        cal = Calendar.getInstance();
-        sdf = new SimpleDateFormat("HH:mm:ss");
+        setAllFalse();
         paramPanel.setVisible(false);
         ms  = new MessengerService(1, "http://10.216.35.189:8080");
 
         ActionListener listener = e -> {
             reset_param_layout();
             if (e.getSource().equals(TIMETABLEButton)){
+                setAllFalse();
                 t_dF1.setText("Room name");
                 t_dF2.setText("Start day");
                 t_dF3.setText("End day");
@@ -63,6 +63,7 @@ public class test {
                 outputArea.append(t() + "....Please enter room, start day and end day.\n");
             }
             else if (e.getSource().equals(ROOMAVAILABILITYButton)) {
+                setAllFalse();
                 t_dF1.setText("Room name");
                 t_dF2.setText("Day");
                 t_dF3.setText("Time");
@@ -71,6 +72,7 @@ public class test {
                 availability = true;
                 afterBtn();            }
             else if (e.getSource().equals(NEWROOMButton)){
+                setAllFalse();
                 t_dF1.setText("New room name");
                 t_dF2.setText("Capacity");
                 dF3.setVisible(false);
@@ -81,6 +83,7 @@ public class test {
                 new_room = true;
             }
             else if (e.getSource().equals(VIEWROOMSButton)) {
+                setAllFalse();
                 outputArea.append(t() + "Getting listing of current rooms\n");
                 paramPanel.setVisible(false);
                 ArrayList<String> a = ms.get_request("/rooms");
@@ -96,6 +99,7 @@ public class test {
                 }
             }
             else if (e.getSource().equals(NEWBOOKINGButton)){
+                setAllFalse();
                 t_dF1.setText("Room name");
                 t_dF2.setText("Day");
                 t_dF3.setText("Time");
@@ -193,6 +197,7 @@ public class test {
                 }
             }
             else if (e.getSource().equals(TESTButton)) {
+                setAllFalse();
                 t_dF1.setText("How many threads?");
                 dF2.setVisible(false);
                 t_dF2.setVisible(false);
@@ -250,7 +255,17 @@ public class test {
         paramPanel.setVisible(false);
     }
 
+    private void setAllFalse(){
+       timetable = false;
+       new_room = false;
+       new_booking = false;
+       availability = false;
+       testing = false;
+    }
+
     private String t(){
+        cal = Calendar.getInstance();
+        sdf = new SimpleDateFormat("HH:mm:ss");
         return sdf.format(cal.getTime()) +":\t";
     }
 

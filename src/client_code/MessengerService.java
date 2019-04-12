@@ -27,7 +27,8 @@ public class MessengerService implements Runnable {
     }
 
     public boolean make_booking(String room, int day, String time, int att){
-        String booking_tmp = ("{\"room_name\": \""+ room +"\", \"day\": "+ day +", \"time\":\""+ time +"\", \"num_attendees\": "+ att +"}");
+        System.out.println(room);
+        String booking_tmp = ("{\"roomName\": \""+ room +"\", \"day\": "+ day +", \"time\":\""+ time +"\", \"num_attendees\": "+ att +"}");
         String error = "Error, booking already exists";
         return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
     }
@@ -43,7 +44,7 @@ public class MessengerService implements Runnable {
     public boolean new_room(String room, int capacity){
         String booking_tmp = ("{\"name\": \""+ room +"\", \"capacity\": "+ capacity +"}");
         String error = "Error, cannot post to room"; //TODO CHECK ERROR MESSAGE ON FAIL TO POST
-        return (!post_request("/bookings", booking_tmp).get(0).toString().equals(error));
+        return (!post_request("/rooms", booking_tmp).get(0).toString().equals(error));
     }
 
     public ArrayList get_timetable(String room, int s_day, int e_day){
@@ -60,6 +61,7 @@ public class MessengerService implements Runnable {
     public Map<String, Object> jsonToMap(String s) {
         Map<String, Object> m;
         try {
+            System.out.println(s);
             m = new ObjectMapper().readValue(s, HashMap.class);
         } catch (IOException e) {
             e.printStackTrace();
