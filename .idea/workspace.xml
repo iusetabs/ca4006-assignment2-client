@@ -3,6 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="cb1738da-a40d-43ea-8535-c3f96e68bac8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_code/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ca4006-assignment2-client/client_ui/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_code/HttpRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_code/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_code/MessengerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_code/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_ui/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_ui/test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/client_ui/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/core/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/com/intellij/uiDesigner/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_code/HttpRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/HttpRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_code/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client_code/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_code/MessengerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client_ui/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_ui/test.java" afterDir="false" />
     </list>
@@ -34,23 +62,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="159" column="53" lean-forward="true" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-422">
+              <caret line="54" column="71" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
+        <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="1649">
+              <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+              <folding>
+                <element signature="e#2180#2181#0" expanded="true" />
+                <element signature="e#2224#2225#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,24 +87,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
+        <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="419">
+              <caret line="196" column="27" selection-start-line="196" selection-start-column="27" selection-end-line="196" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#10892#10893#0" expanded="true" />
+                <element signature="e#10935#10936#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +115,7 @@
       <find>clearText</find>
       <find>no Rooms</find>
       <find>time</find>
-      <find>roomNa</find>
+      <find>room_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,19 +124,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/client_code/HttpRest.java" />
         <option value="$PROJECT_DIR$/src/client_ui/test.form" />
-        <option value="$PROJECT_DIR$/src/client_code/Manager.java" />
         <option value="$PROJECT_DIR$/src/client_ui/test.java" />
+        <option value="$PROJECT_DIR$/src/client_code/Manager.java" />
+        <option value="$PROJECT_DIR$/src/client_code/HttpRest.java" />
         <option value="$PROJECT_DIR$/src/client_code/MessengerService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -183,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UI">
+  <component name="RunManager" selected="Application.Manager">
     <configuration name="Manager" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="client_code.Manager" />
       <module name="ca4006-assignment2-client" />
@@ -216,14 +242,12 @@
       <workItem from="1554758421496" duration="998000" />
       <workItem from="1554912385942" duration="1207000" />
       <workItem from="1554915508495" duration="2336000" />
-      <workItem from="1554987716108" duration="13737000" />
-      <workItem from="1555018283262" duration="1222000" />
-      <workItem from="1555061451605" duration="5883000" />
+      <workItem from="1554987716108" duration="13156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35347000" />
+    <option name="totallyTimeSpent" value="29961000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,7 +259,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20244215" />
@@ -247,12 +271,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.4991708" weight="0.32955465" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1596424" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46434495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3283582" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32822478" />
@@ -297,40 +321,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client_ui/test.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="419">
+          <caret line="196" column="27" selection-start-line="196" selection-start-column="27" selection-end-line="196" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10892#10893#0" expanded="true" />
+            <element signature="e#10935#10936#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_ui/test.java">
+    <entry file="file://$PROJECT_DIR$/src/client_code/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="159" column="53" lean-forward="true" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_code/MessengerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="1649">
+          <caret line="109" column="13" lean-forward="true" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2180#2181#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_code/HttpRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="54" column="71" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="71" />
         </state>
       </provider>
     </entry>

@@ -45,11 +45,15 @@ public class HttpRest{
             conn.setDoOutput(true);
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
-
-
             OutputStream os = conn.getOutputStream();
             os.write(Payload.getBytes());
             os.flush();
+            int code = conn.getResponseCode();
+            //if (code == 401 || code == 402 || code == 403 || code == 404 || code == 405)
+            //    throw new RuntimeException("Failed : HTTP error code");
+            if(code == 500)
+                    throw new RuntimeException("Failed : HTTP error code");
+
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
@@ -61,6 +65,8 @@ public class HttpRest{
 
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (Exception e){
+            throw new RuntimeException("Server down!");
         }
         return request;
     }

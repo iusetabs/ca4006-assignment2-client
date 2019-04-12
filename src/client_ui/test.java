@@ -227,10 +227,10 @@ public class test {
     }
 
     public void run_program(int num, JTextArea outputArea){
-        ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(500);
         Random ran = new Random();
         String ip = "http://10.216.35.189:8080";
-        for (int i=0; i < 50; i++ ){
+        for (int i=0; i < num; i++ ){
             MessengerService m = new MessengerService(i, ip, outputArea);
             executor.schedule(m, Math.abs(ran.nextInt(5)+1) , TimeUnit.SECONDS);
         }

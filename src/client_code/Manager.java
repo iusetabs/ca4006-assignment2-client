@@ -8,12 +8,12 @@ import java.util.concurrent.TimeUnit;
 public class Manager {
 
     public static void main(String [] args){
-        ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(200);
         Random ran = new Random();
         String ip = "http://10.216.35.189:8080";
-        for (int i=0; i < 1000; i++ ){
+        for (int i=0; i < 10; i++ ){
             MessengerService m = new MessengerService(i, ip);
-            executor.schedule(m, 0 , TimeUnit.SECONDS);
+            executor.schedule(m, Math.abs(ran.nextInt(4)+1) , TimeUnit.SECONDS);
         }
         executor.shutdown();
     }
