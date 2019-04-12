@@ -11,9 +11,9 @@ public class Manager {
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
         Random ran = new Random();
         String ip = "http://10.216.35.189:8080";
-        for (int i=0; i < 50; i++ ){
+        for (int i=0; i < 1000; i++ ){
             MessengerService m = new MessengerService(i, ip);
-            executor.schedule(m, Math.abs(ran.nextInt(5)+1) , TimeUnit.SECONDS);
+            executor.schedule(m, 0 , TimeUnit.SECONDS);
         }
         executor.shutdown();
     }
