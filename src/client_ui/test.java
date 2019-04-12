@@ -141,10 +141,6 @@ public class test {
                     timetable = false;
                     clearText();
                 }
-                else if (testing){
-                    int num = Integer.parseInt(dF1.getText().strip());
-                    run_program(num);
-                }
                 else if (new_room){
                     String rN = dF1.getText().strip();
                     int c = Integer.parseInt(dF2.getText().strip());
@@ -195,6 +191,8 @@ public class test {
                     availability = false;
                 }
                 else if(testing){
+                    int num = Integer.parseInt(dF1.getText().strip());
+                    run_program(num, outputArea);
                     outputArea.append("\n");
                     testing = false;
                 }
@@ -223,12 +221,12 @@ public class test {
         TESTButton.addActionListener(listener);
     }
 
-    public void run_program(int rN){
+    public void run_program(int num, JTextArea outputArea){
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
         Random ran = new Random();
         String ip = "http://10.216.35.189:8080";
         for (int i=0; i < 50; i++ ){
-            MessengerService m = new MessengerService(i, ip);
+            MessengerService m = new MessengerService(i, ip, outputArea);
             executor.schedule(m, Math.abs(ran.nextInt(5)+1) , TimeUnit.SECONDS);
         }
         executor.shutdown();
