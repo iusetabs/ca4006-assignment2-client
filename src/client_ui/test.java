@@ -37,6 +37,7 @@ public class test {
     private JLabel t_dF2;
     private JLabel t_dF3;
     private JLabel t_dF4;
+    private JButton clearButton;
     public MessengerService ms;
     private Calendar cal;
     private SimpleDateFormat sdf;
@@ -53,7 +54,8 @@ public class test {
         ms  = new MessengerService(1, "http://10.216.35.189:8080");
 
         ActionListener listener = e -> {
-            reset_param_layout();
+            if (!e.getSource().equals(clearButton) && !(e.getSource().equals(ENTERButton)))
+                reset_param_layout();
             if (e.getSource().equals(TIMETABLEButton)){
                 setAllFalse();
                 t_dF1.setText("Room name");
@@ -213,6 +215,10 @@ public class test {
                 testing = true;
                 afterBtn();
             }
+            else if(e.getSource().equals(clearButton)){
+                outputArea.selectAll();
+                outputArea.replaceSelection("");
+            }
             paramPanel.revalidate();
             paramPanel.repaint();
 
@@ -224,6 +230,8 @@ public class test {
         NEWBOOKINGButton.addActionListener(listener);
         ENTERButton.addActionListener(listener);
         TESTButton.addActionListener(listener);
+        clearButton.addActionListener(listener);
+
     }
 
     public void run_program(int num, JTextArea outputArea){
